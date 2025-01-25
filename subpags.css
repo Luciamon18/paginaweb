@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+/* Imagen que activa el dropdown */
+.dropdown img {
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown-content {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  background-color: white;
+  border: none;
+  z-index: 1;
+  min-width: 150px;
+  padding: 10px;
+}
+
+/* Muestra el menú cuando el cursor pasa por el contenedor dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Botones del menú */
+.dropdown-content button {
+  background-color: white;
+  border:none;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+}
+
+/* Efecto hover en los botones */
+.dropdown-content button:hover {
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.text {
+  font-size: 20px;
+  margin-left:20%;
+  margin-right: 25%;
+  vertical-align: top;
+}
+
+.buscar{
+  font-size: 10px;
+  vertical-align: top;
+}
+
+/* Estilo general para la lista de puntos */
+.points-list {
+  font-size: 18px;                /* Tamaño de fuente */
+  line-height: 1.6;               /* Espaciado entre líneas */
+  margin: 20px;                   /* Espaciado alrededor de la lista */
+  margin-left:27%;             /* Espaciado a la izquierda */
+}
+
+/* Estilo para cada valor de puntos */
+.points-list .point-value {
+  font-weight: bold;             /* Hacer el texto de puntos más destacado */
+  color: black;                /* Color azul para los puntos */
+}
+
+/* Añadir espacio entre los elementos */
+.points-list p {
+  margin: 8px 0;                 /* Espaciado entre los párrafos */
+}
+.aviso{
+  color: red;
+  font-size: 18px;
+  margin-left:30%;
+}
